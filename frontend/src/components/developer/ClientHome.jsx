@@ -124,7 +124,7 @@ const ClientHome = () => {
         console.log(ClientDetails.redirectedUrl)
 
         try {
-            const response = await axios.post("http://localhost:5001/api`/client/redirectedURL",{redirectedUrl:ClientDetails.redirectedUrl},{
+            const response = await axios.post("http://localhost:5001/api/client/redirectedURL",{redirectedUrl:ClientDetails.redirectedUrl},{
                 withCredentials:true
             })
         } catch (error) {
@@ -212,10 +212,10 @@ const ClientHome = () => {
                         <div className="flex flex-row ml-6 mt-4">
       
                             <select name="access" id="access" className="px-4 py-2 rounded-xl border-violet-700 border-2 cursor-pointer" value={selectedOption} onChange={(e)=>setSelectedOption(e.target.value)}>
-                                <option value="First Name">First Name</option>
-                                <option value="Last Name">Last Name</option>
-                                <option value="Email">Email</option>
-                                <option value="Mobile">Mobile</option>
+                                <option value="firstname">First Name</option>
+                                <option value="lastname">Last Name</option>
+                                <option value="email">Email</option>
+                                <option value="mobile">Mobile</option>
                             </select>
                             
                             <div className="w-[80px] text-center border-2 rounded-lg hover:bg-violet-500 bg-violet-300 cursor-pointer text-white ml-6 text-sm mt-4" onClick={upadateAccessRequired}>Submit</div>

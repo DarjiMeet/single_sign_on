@@ -12,11 +12,27 @@ dotenv.config()
 const app = express()
 const port = process.env.PORT || 5000
 
+const allowedOrigins = [
+    'http://localhost:5173',
+    'http://localhost:5001',
+    'http://localhost:3000',
+    'https://your-production-domain.com' // Add other allowed origins here
+];
+
 app.use(cors({
-    origin:'http://localhost:5173',
-    methods:'GET,POST,PUT,DELETE',
-    credentials:true
-}))
+    origin: (origin, callback) => {
+        if (allowedOrigins.includes(origin) || !origin) {
+            // Allow requests with valid origin or no origin (like for mobile apps)
+            callback(null, origin);
+        } else {
+            // Block requests with unauthorized origins
+            callback(new Error('Not allowed by CORS'));
+        }
+    },
+    credentials: true, // Required for cookies or credentials
+    methods: 'GET,POST,PUT,DELETE',
+    allowedHeaders: ['Content-Type', 'Authorization']
+}));
 app.use(express.json())
 app.use(cookieParser())
 

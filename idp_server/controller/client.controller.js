@@ -198,7 +198,7 @@ export const CheckAuth = async(req,res) =>{
             return res.status(400).json({success:false, message:"User not found"})
         }
         res.status(200).json({success:true,client:{
-            clientId:client._id,
+            clientId:client.clientId,
             clientName: client.clientName,
 
         }})
@@ -216,7 +216,7 @@ export const showDetails = async (req,res) => {
             return res.status(400).json({success:false, message:"User not found"})
         }
         res.status(200).json({success:true,client:{
-            clientId:client._id,
+            clientId:client.clientId,
             clientName: client.clientName,
             clientSecret:client.clientSecret,
             clientEmail:client.email,
@@ -356,7 +356,7 @@ export const AccessToken = async (req,res) => {
                 const token = response.data.token
                 res.status(200).json({token,email})
             } catch (error) {
-                console.log("Error sending token and email from IDP AccessToken",error)
+                console.error("Error sending token and email from IDP AccessToken",error)
                 res.status(400).json({success:false,message:error.message})
             }
             

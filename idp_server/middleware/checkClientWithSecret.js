@@ -1,7 +1,7 @@
 import Client from "../models/client.model.js"
 
 
-const checkClientWithSecret = async (req,res) => {
+const checkClientWithSecret = async (req,res,next) => {
     const ClientID = req.body.ClientID
     const ClientSecret = req.body.ClientSecret  
     const RedirectURI = req.body.RedirectURI

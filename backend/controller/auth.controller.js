@@ -313,7 +313,7 @@ export const grantProfile = async (req,res) => {
     
     try {
         const payload = jwt.verify(token,process.env.IDP_SERVER_JWT_SECRET)
-        if(!verify){
+        if(!payload){
             return res.status(400).json({success:false,message:"Invalid token"})
         }
 
@@ -325,10 +325,11 @@ export const grantProfile = async (req,res) => {
         }
 
         const grantedDetails = {}
-        for(key in requirements){
+        for(let key of requirements){
             grantedDetails[key] = details[key] 
         }
 
+        console.log(grantedDetails)
         return res.status(200).json({
             success:true,
             data:grantedDetails
