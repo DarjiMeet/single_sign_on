@@ -376,3 +376,23 @@ export const userLogin = async (req,res) => {
         res.status(400).json({success:false,message:error.message})
     }
 }
+
+export const showDetails = async (req,res) => {
+    try {
+        const user = await User.findById(req.userId)
+        if(!user){
+            return res.status(400).json({success:false, message:"User not found"})
+        }
+        res.status(200).json({success:true,user:{
+            userId:user.userId,
+            firstName: user.firstname,
+            lastName:user.lastname,
+            email:user.email,
+            mobile:user.mobile,
+        }})
+    } catch (error) {
+        console.log("Error in showdetails",error);
+        res.status(400).json({success:false,message:error.message})
+        
+    }
+}

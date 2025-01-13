@@ -1,5 +1,5 @@
 import express from "express";
-import { login, logout, signup, verifyEmail, forgotPassword, resetPassword, checkAuth, resendCode, userLogin, generateAccessToken, grantProfile } from "../controller/auth.controller.js";
+import { login, logout, signup, verifyEmail, forgotPassword, resetPassword, checkAuth, resendCode, userLogin, generateAccessToken, grantProfile, showDetails } from "../controller/auth.controller.js";
 import { verifyToken } from "../middleware/verifyToken.js";
 import serverValidator from "../middleware/serverValidator.js";
 
@@ -26,5 +26,7 @@ router.post("/userlogin",userLogin)
 router.post("/accessToken",serverValidator,generateAccessToken)
 
 router.post("/grantProfile",grantProfile)
+
+router.get("/showdetails",verifyToken,showDetails)
 
 export default router
