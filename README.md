@@ -34,3 +34,20 @@
 
    <h2 id="OpenId_Flow_Diagram">OpenId Flow Diagram</h2>
    <img src="./Images/Openid_flow.png" alt="Openid_flow">
+
+   <h2 id="screenshots">Some ScreenShots</h2>
+   <h3>For Client</h3>
+   <img src="./Images/DevHome.png" alt="DevHome">
+   <img src="./Images/DevLogin.png" alt="DevLogin">
+   <img src="./Images/DevCred.png" alt="DevCred">
+   
+   <h3>For User</h3>
+   <img src="./Images/user.png" alt="user">
+   <img src="./Images/userRegister.png" alt="userRegister">
+   <img src="./Images/serCred.png" alt="serCred">
+
+   <h3>SSO Integration in Client's Website in</h3>
+   <img src="./Images/Client.png" alt="Client">
+   <img src="./Images/ClientLogin.png" alt="ClientLogin">
+   
+   
