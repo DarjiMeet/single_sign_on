@@ -5,20 +5,9 @@
     <li><a href="#project-overview">Project Overview</a></li>
     <li><a href="#features">Features</a></li>
     <li><a href="#tech-stack">Tech Stack</a></li>
-    <li><a href="#architecture-diagram">Architecture Diagram</a></li>
-    <li><a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-        <li><a href="#configuration">Configuration</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#OpenId_Flow_Diagram">OpenId Flow Diagram</a></li>
     <li><a href="#screenshots">Screenshots</a></li>
-    <li><a href="#endpoints">Endpoints</a></li>
     <li><a href="#future-enhancements">Future Enhancements</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contributors">Contributors</a></li>
   </ul>
 
   <h2 id="project-overview">Project Overview</h2>
@@ -42,3 +31,6 @@
     <li><strong>Authentication Protocols:</strong> OAuth 2.0, OpenID.</li>
     <li><strong>Utilities:</strong> JWT, bcrypt for password hashing.</li>
   </ul>
+
+   <h2 id="tech-stack">Tech Stack</h2>
+   <img src=''/>
