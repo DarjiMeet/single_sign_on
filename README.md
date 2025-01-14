@@ -33,4 +33,4 @@
   </ul>
 
    <h2 id="tech-stack">Tech Stack</h2>
-   <img src=''/>
+   <img src="./Images/Openid_flow.png" alt="Openid_flow">
