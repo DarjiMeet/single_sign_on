@@ -8,6 +8,7 @@
     <li><a href="#OpenId_Flow_Diagram">OpenId Flow Diagram</a></li>
     <li><a href="#screenshots">Screenshots</a></li>
     <li><a href="#future-enhancements">Future Enhancements</a></li>
+    <li><a href="#configuration">Configuration</a></li>
   </ul>
 
   <h2 id="project-overview">Project Overview</h2>
@@ -49,5 +50,55 @@
    <h3>SSO Integration in Client's Website in</h3>
    <img src="./Images/Client.png" alt="Client">
    <img src="./Images/ClientLogin.png" alt="ClientLogin">
+
+   <h2 id="configuration">Configuration</h2>
+   <h3>.Env for backend</h3>
+  // Server Configuration
+   PORT=5000
+   NODE_ENV=development
+   
+   // MongoDB Configuration
+   MONGO_URI=your-mongodb-connection-string
+   
+   // JWT Secrets
+   JWT_SECRET=your-jwt-secret
+   JWT_SECRET_CLIENT=your-client-jwt-secret
+   
+   // Mailtrap Configuration
+   MAILTRAP_TOKEN=your-mailtrap-token
+   MAILTRAP_ENDPOINT=your-mailtrap-endpoint
+   
+   // Client Configuration
+   CLIENT_URL=http://localhost:5173 (frontend)
+   
+   // Identity Provider (IDP) Configuration
+   IDP_SERVER_JWT_SECRET=your-idp-server-jwt-secret
+   IDP_SERVER_AUTH=your-idp-auth-secret
+
+   <h3>.Env for idp_server</h3>
+   // MongoDB URI for connecting to the database
+   MONGO_URI=your-mongodb-uri
+   
+   // Server configuration
+   PORT=5001
+   NODE_ENV=development
+   
+   // JWT secrets used for token generation
+   JWT_SECRET=your-jwt-secret
+   JWT_SECRET_CLIENT=your-client-jwt-secret
+   
+   // Client and Resource Server configuration
+   CLIENT_URL=http://localhost:5173 (frontend)
+   RESOURCE_SERVER=http://localhost:5000
+   
+   // Encryption key for securing sensitive data
+   ENCRYPTION_KEY=your-encryption-key
+   
+   // IDP server authentication secret
+   IDP_SERVER_AUTH=your-idp-auth-secret
+
+
+   (Note: backend is a resource server)
+
    
    
