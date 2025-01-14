@@ -53,48 +53,48 @@
 
    <h2 id="configuration">Configuration</h2>
    <h3>.Env for backend</h3>
-  // Server Configuration
+  // Server Configuration <br>
    PORT=5000
    NODE_ENV=development
    
-   // MongoDB Configuration
+   // MongoDB Configuration <br>
    MONGO_URI=your-mongodb-connection-string
    
-   // JWT Secrets
+   // JWT Secrets <br>
    JWT_SECRET=your-jwt-secret
    JWT_SECRET_CLIENT=your-client-jwt-secret
    
-   // Mailtrap Configuration
+   // Mailtrap Configuration <br>
    MAILTRAP_TOKEN=your-mailtrap-token
    MAILTRAP_ENDPOINT=your-mailtrap-endpoint
    
-   // Client Configuration
+   // Client Configuration <br>
    CLIENT_URL=http://localhost:5173 (frontend)
    
-   // Identity Provider (IDP) Configuration
+   // Identity Provider (IDP) Configuration <br>
    IDP_SERVER_JWT_SECRET=your-idp-server-jwt-secret
    IDP_SERVER_AUTH=your-idp-auth-secret
 
    <h3>.Env for idp_server</h3>
-   // MongoDB URI for connecting to the database
+   // MongoDB URI for connecting to the database <br>
    MONGO_URI=your-mongodb-uri
    
-   // Server configuration
+   // Server configuration <br>
    PORT=5001
    NODE_ENV=development
    
-   // JWT secrets used for token generation
+   // JWT secrets used for token generation <br>
    JWT_SECRET=your-jwt-secret
    JWT_SECRET_CLIENT=your-client-jwt-secret
    
-   // Client and Resource Server configuration
+   // Client and Resource Server configuration <br>
    CLIENT_URL=http://localhost:5173 (frontend)
    RESOURCE_SERVER=http://localhost:5000
    
-   // Encryption key for securing sensitive data
+   // Encryption key for securing sensitive data <br>
    ENCRYPTION_KEY=your-encryption-key
    
-   // IDP server authentication secret
+   // IDP server authentication secret <br>
    IDP_SERVER_AUTH=your-idp-auth-secret
 
 
