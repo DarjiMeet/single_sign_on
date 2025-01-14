@@ -32,5 +32,5 @@
     <li><strong>Utilities:</strong> JWT, bcrypt for password hashing.</li>
   </ul>
 
-   <h2 id="tech-stack">Tech Stack</h2>
+   <h2 id="OpenId_Flow_Diagram">OpenId Flow Diagram</h2>
    <img src="./Images/Openid_flow.png" alt="Openid_flow">
