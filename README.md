@@ -44,7 +44,7 @@
    <h3>For User</h3>
    <img src="./Images/user.png" alt="user">
    <img src="./Images/userRegister.png" alt="userRegister">
-   <img src="./Images/serCred.png" alt="serCred">
+   <img src="./Images/userCred.png" alt="serCred">
 
    <h3>SSO Integration in Client's Website in</h3>
    <img src="./Images/Client.png" alt="Client">
