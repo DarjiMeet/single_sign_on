@@ -1,4 +1,5 @@
- <h1>Custom SSO Implementation using OAuth 2.0 and OpenID</h1>
+ <h1>Custom SSO Implementation</h1>
+ <div>Implemented OAuth2.0 and OpenID protocol from scratch for creating providing signing functionality to developer same like google provides its LogIn with google functionality.</div>
 
   <h2>Table of Contents</h2>
   <ul>
